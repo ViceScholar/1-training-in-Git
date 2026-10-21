@@ -10,6 +10,13 @@
 <p id="message">Bienvenue dans notre application.</p> 
 <button onclick="afficherMessage()"> 
 Afficher un message 
+<search>
+  <form action="/recherche" method="get">
+    <label for="site-search">Rechercher sur le site :</label>
+    <input type="search" id="site-search" name="q" placeholder="Votre recherche..." required />
+    <button type="submit">Rechercher</button>
+  </form>
+</search>
 </button> 
 <p>Nombre d'apprenants : <span id="total">3</span></p>
 <script src="app.js"></script> 
